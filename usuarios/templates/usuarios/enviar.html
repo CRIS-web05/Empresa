@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar informe semanal</title>
+    <link rel="stylesheet" href="{% static 'css/enviar.css' %}">
+</head>
+<body>
+<div class="card">
+    <h2>Enviar informe semanal</h2>
+
+    <p>Instrucciones para enviar el informe:</p>
+    <ul class="task-list">
+        <li>Revisar las tareas completadas durante la semana.</li>
+        <li>Completar el documento de informe semanal.</li>
+        <li>Adjuntar archivos relevantes si es necesario.</li>
+        <li>Enviar el informe al correo del supervisor o equipo correspondiente.</li>
+        <li>Confirmar la recepción del informe.</li>
+    </ul>
+
+    <button class="add-task">Adjuntar archivos</button>
+
+    <div class="bottom-link">
+        <a href="{% url 'perfil' %}">Volver al perfil</a>
+    </div>
+</div>
+</body>
+</html>

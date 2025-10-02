@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(135deg, #f0f8ff, #d0e7ff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Card principal */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    width: 450px;
+    text-align: center;
+}
+
+/* Título */
+.card h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Párrafo */
+.card p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Enlace volver al perfil */
+.bottom-link a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2ecc71;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.bottom-link a:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}

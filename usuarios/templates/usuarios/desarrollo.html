@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Desarrollo de Proyecto</title>
+<link rel="stylesheet" href="{% static 'css/desarrollo.css' %}">
+</head>
+<body>
+<div class="card">
+    <h2>Desarrollo de Proyecto X</h2>
+
+    <table class="task-table">
+        <thead>
+            <tr>
+                <th>Tarea</th>
+                <th>Estado</th>
+                <th>Responsable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Diseño de interfaz</td>
+                <td class="task-done">Completado</td>
+                <td>Laura</td>
+            </tr>
+            <tr>
+                <td>Desarrollo del backend</td>
+                <td class="task-progress">En progreso</td>
+                <td>Carlos</td>
+            </tr>
+            <tr>
+                <td>Pruebas unitarias</td>
+                <td class="task-pending">Pendiente</td>
+                <td>Andrés</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="add-task">Añadir avance</button>
+</div>
+</body>
+</html>

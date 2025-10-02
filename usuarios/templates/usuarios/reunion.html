@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reunión con el equipo</title>
+    <link rel="stylesheet" href="{% static 'css/reunion.css' %}">
+</head>
+<body>
+<div class="card">
+    <h2>Reunión con el equipo</h2>
+    <p>Agenda de la reunión:</p>
+
+    <table class="agenda-table">
+        <tr>
+            <th>Hora</th>
+            <th>Actividad</th>
+        </tr>
+        <tr>
+            <td>09:00 - 09:15</td>
+            <td>Bienvenida y objetivos</td>
+        </tr>
+        <tr>
+            <td>09:15 - 10:00</td>
+            <td>Revisión de avances del proyecto</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:30</td>
+            <td>Resolución de problemas</td>
+        </tr>
+        <tr>
+            <td>10:30 - 11:00</td>
+            <td>Próximas tareas y asignaciones</td>
+        </tr>
+        <tr>
+            <td>11:00 - 11:15</td>
+            <td>Cierre y comentarios finales</td>
+        </tr>
+    </table>
+
+    <div class="bottom-link">
+        <a href="{% url 'perfil' %}">Volver al perfil</a>
+    </div>
+</div>
+</body>
+</html>

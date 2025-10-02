@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planificación del día</title>
+    <link rel="stylesheet" href="{% static 'css/planificacion.css' %}">
+</head>
+<body>
+<div class="card">
+    <h2>Planificación del día</h2>
+    <p>Hoy tu agenda incluye:</p>
+
+    <table class="agenda-table">
+        <tr>
+            <th>Hora</th>
+            <th>Actividad</th>
+        </tr>
+        <tr>
+            <td>08:00 - 09:00</td>
+            <td>Revisión de correos</td>
+        </tr>
+        <tr>
+            <td>09:00 - 11:00</td>
+            <td>Planificación de tareas importantes</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:30</td>
+            <td>Desarrollo de proyecto X</td>
+        </tr>
+        <tr>
+            <td>12:30 - 13:30</td>
+            <td>Almuerzo</td>
+        </tr>
+        <tr>
+            <td>13:30 - 15:00</td>
+            <td>Reunión con el equipo</td>
+        </tr>
+        <tr>
+            <td>15:00 - 17:00</td>
+            <td>Finalización de tareas pendientes</td>
+        </tr>
+    </table>
+
+    <div class="bottom-link">
+        <a href="{% url 'perfil' %}">Volver al perfil</a>
+    </div>
+</div>
+</body>
+</html>

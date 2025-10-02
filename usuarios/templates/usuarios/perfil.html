@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="{% static 'css/perfil.css' %}">
+</head>
+<body>
+<div class="card">
+    <h2>Perfil de {{ user.username }}</h2>
+
+    <!-- Información del usuario -->
+    <table class="info-table">
+        <tr>
+            <td><b>Nombre:</b></td>
+            <td>{{ user.first_name }} {{ user.last_name }}</td>
+        </tr>
+        <tr>
+            <td><b>Correo:</b></td>
+            <td>{{ user.email }}</td>
+        </tr>
+        <tr>
+            <td><b>Rol:</b></td>
+            <td>{{ user.rol }}</td>
+        </tr>
+    </table>
+
+    <!-- Menú de tareas -->
+    <h3>Menú de Tareas</h3>
+    <table class="menu-table">
+        <tr>
+            <td><a href="{% url 'revision' %}" class="btn">Revisión de correos</a></td>
+            <td><a href="{% url 'planificacion' %}" class="btn">Planificación del día</a></td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'desarrollo' %}" class="btn">Desarrollo de proyecto X</a></td>
+            <td><a href="{% url 'enviar' %}" class="btn">Enviar informe semanal</a></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="{% url 'reunion' %}" class="btn">Reunión con el equipo</a></td>
+        </tr>
+    </table>
+
+    <!-- Logout -->
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn-logout">Cerrar Sesión</button>
+    </form>
+</div>
+</body>
+</html>

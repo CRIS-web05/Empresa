@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(135deg, #f0f8ff, #d0e7ff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Caja principal */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Título */
+.card h1 {
+    color: #1565c0;
+    margin-bottom: 30px;
+}
+
+/* Tabla de enlaces */
+.inicio-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.inicio-table td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Estilo de los botones */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1565c0;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #0d47a1;
+    transform: scale(1.05);
+}

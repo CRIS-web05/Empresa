@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Revisión de correos</title>
+    <link rel="stylesheet" href="{% static 'css/revision.css' %}">
+</head>
+<body>
+<div class="card">
+    <h2>Revisión de correos</h2>
+    <p>Aquí podrás revisar tus correos y mensajes importantes.</p>
+
+    <div class="bottom-link">
+        <a href="{% url 'perfil' %}">Volver al perfil</a>
+    </div>
+</div>
+</body>
+</html>

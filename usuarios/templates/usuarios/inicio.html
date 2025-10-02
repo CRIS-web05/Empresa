@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+</head>
+<body>
+<div class="card">
+    <h1>Bienvenido </h1>
+    <table class="inicio-table">
+        <tr>
+            <td><a href="{% url 'login' %}" class="btn">Iniciar sesión</a></td>
+            <td><a href="{% url 'registro' %}" class="btn">Registrarse</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

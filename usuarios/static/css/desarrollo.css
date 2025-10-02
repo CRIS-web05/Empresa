@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(120deg, #f0f4ff, #e3f2fd);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    width: 600px;
+    text-align: center;
+}
+
+/* Título principal */
+.card h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Tabla de tareas */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.task-table th, .task-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1rem;
+}
+
+.task-table td {
+    text-align: left;
+}
+
+/* Estados de tareas */
+.task-done {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.task-pending {
+    color: #d35400;
+    font-weight: bold;
+}
+
+.task-progress {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Botón para añadir avances */
+.add-task {
+    display: inline-block;
+    margin-top: 15px;
+    background: #2ecc71;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-task:hover {
+    background: #27ae60;
+}
